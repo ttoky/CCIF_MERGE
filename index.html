@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climate Change</title>
+
+    <!--- stylesheet (merged) ---------------------------------->
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+    <!---distributed libs --------------------------------------->
+    <script type="text/javascript" src="dist/three.min.js"></script>
+    <script type="text/javascript" src="dist/CanvasRenderer.js"></script>
+    <script type="text/javascript" src="dist/projector.js"></script>
+    <script type="text/javascript" src="dist/texture-loader.js"></script>
+
+    <!---internal JS ---------------------------------------------->
+    <script type="text/javascript" src="JS/COMMON_script.js"></script>
+</head>
+
+<body>
+
+     <!---div for visualization --------------------------------->
+    <div id='visualization'></div>
+    <script src="JS/UX_UI_script.js"></script>
+    <script type="text/javascript" src="JS/visualization_script.js"></script>
+
+    <!---div for visualization loading ------------------------->
+    <div id='loading'>Loading.........</div>
+
+
+    <!---div for interaction ---------------------------------->
+
+    <div id="scroll-area">
+        <div id="scroll-wrapper">
+            <div id="degree-change">0.0</div>
+            <div id="pixel-change">0px</div>
+        </div>
+        <div class="scroll-height" style="height: 20000px"></div>
+    </div>
+
+    <div id="threeScene"></div>
+    <div id="overlay-area">
+        <div class="overlay-wrapper">
+            <h1 id="decrease-rate">0%</h1>
+            <h2 id="selected-species">Not selected</h2>
+            <h2 style="margin-bottom: 12px;">in the world have disappeared</h2>
+            <h3 style="margin: 24px 0 16px 0;">Related Species</h3>
+            <ul id="related-species-list">
+                <li><a href="#">No related species</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="link">
+        <button id="target-one">Species One</button>
+        <button id="target-two">Species Two</button>
+        <button id="target-three">Species Three</button>
+
+    </div>
+
+    <script src="JS/UX_UI_script.js"></script>
+
+</body>
+
+</html>

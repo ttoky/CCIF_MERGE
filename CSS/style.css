@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    background: black;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  canvas[resize]{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+#visualization {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position:fixed;
+  }
+
+  #overlay-area {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+  }
+  
+  #decrease-rate {
+    font-size: 8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 8px;
+  }
+  
+  #selected-species {
+    font-size: 3em;
+  }
+  
+  .overlay-wrapper {
+    height: 100vh;
+    max-width: 450px;
+    display: flex;
+    margin-left: 72px;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #related-species-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    padding: 4px 12px 4px 12px;
+    margin-right: 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    opacity: .4
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .scroll-height {
+    background-color: black;
+    color: white;
+  }
+  
+  #scroll-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #degree-change {
+    font-size: 14em;
+    font-weight: 800;
+    letter-spacing: -2px;
+    display: block;
+    opacity: .1;
+  }
+  
+  #pixel-change {
+    font-size: 2em;
+    font-weight: 400;
+    display: block;
+    opacity: 0.5;
+  }
+  
+  .link {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  button {
+    font-size: 2em;
+    border-radius: 40px;
+    padding: 4px 12px;
+    margin-right: 16px;
+    background: #0000cc;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.4;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: lightgray;
+    text-decoration: underline;
+  }
